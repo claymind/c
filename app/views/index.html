@@ -4,9 +4,28 @@
 
 {% block head %}
 {% parent %}
-<link rel="stylesheet" href="custom.css">
 {% endblock %}
 
 {% block content %}
-<p>This is just an awesome page.</p>
+<div class="row">
+    <div class="jumbotron col-sm-8 col-sm-offset-2">
+        <h1>'Allo, 'Allo!</h1>
+        <p class="lead">
+            <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+            Always a pleasure scaffolding your apps.
+        </p>
+        <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+    </div>
+
+    <div class="row marketing">
+        <div ng-repeat="thing in awesomeThings">
+            <h4>{{thing.name}}</h4>
+            <p>{{thing.info}}</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>♥ from <%= name %></p>
+    </div>
+</div>
 {% endblock %}

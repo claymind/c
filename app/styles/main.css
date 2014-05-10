@@ -34,7 +34,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1170px;
   }
 }
 .container-narrow > hr {
@@ -77,3 +77,14 @@ body {
     border-bottom: 0;
   }
 }
+
+/* disable rounded corners */
+* {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+nav li { background-color: #FF0000; }
+nav li a { color: #FFF; }
+nav li:hover { background-color: #EEE; }
