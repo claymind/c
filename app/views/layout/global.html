@@ -20,6 +20,7 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
     <!-- endbuild -->
     {% endblock %}
 </head>
@@ -29,10 +30,23 @@
 <![endif]-->
 
 <section class="container">
-{% include '../partials/header.html'  %}
-{% include '../partials/navbar.html'  %}
-{% block content %}{% endblock %}
+    <header class="row">
+        {% include '../partials/header.html'  %}
+    </header>
+    <nav class="row navbar">
+        {% include '../partials/navbar.html'  %}
+    </nav>
+    <div class="row">
+        <section id="left-rail" class="col-md-4">
+            {% include '../partials/left-rail.html'  %}
+        </section>
+
+        <section class="content col-md-8">
+            {% block content %}{% endblock %}
+        </section>
+    </div>
 </section>
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -61,10 +75,13 @@
 <!-- endbower -->
 <!-- endbuild -->
 
+{% block footer %}
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/navbar.js"></script>
+<script src="bower_components/flexslider/jquery.flexslider.js"></script>
 <!-- endbuild -->
+
 </body>
 </html>

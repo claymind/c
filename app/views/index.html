@@ -4,28 +4,51 @@
 
 {% block head %}
 {% parent %}
+
 {% endblock %}
 
 {% block content %}
 <div class="row">
-    <div class="jumbotron col-sm-8 col-sm-offset-2">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">
-            <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-            Always a pleasure scaffolding your apps.
-        </p>
-        <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-    </div>
+    <!--<div class="jumbotron col-sm-8 col-sm-offset-2">-->
+        <!--<h1>'Allo, 'Allo!</h1>-->
+        <!--<p class="lead">-->
+            <!--<img src="images/yeoman.png" alt="I'm Yeoman"><br>-->
+            <!--Always a pleasure scaffolding your apps.-->
+        <!--</p>-->
+        <!--<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>-->
+    <!--</div>-->
 
-    <div class="row marketing">
-        <div ng-repeat="thing in awesomeThings">
-            <h4>{{thing.name}}</h4>
-            <p>{{thing.info}}</p>
-        </div>
-    </div>
+    <!--<div class="row marketing">-->
+        <!--<div ng-repeat="thing in awesomeThings">-->
+            <!--<h4>{{thing.name}}</h4>-->
+            <!--<p>{{thing.info}}</p>-->
+        <!--</div>-->
+    <!--</div>-->
 
-    <div class="footer">
-        <p>♥ from <%= name %></p>
+    <!--<div class="footer">-->
+        <!--<p>♥ from <%= name %></p>-->
+    <!--</div>-->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/web-design.jpg" />
+            </li>
+            <li>
+                <img src="images/online-shopping.jpg" />
+            </li>
+            <li>
+                <img src="images/customer-service.jpg" />
+            </li>
+        </ul>
     </div>
 </div>
+{% endblock %}
+
+{% block footer %}
+{% parent %}
+<script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+        $('.flexslider').flexslider();
+    });
+</script>
 {% endblock %}
