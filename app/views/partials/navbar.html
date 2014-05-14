@@ -3,11 +3,35 @@
             <!--<li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">-->
             <!--<a ng-href="{{item.link}}">{{item.title}}</a>-->
             <!--</li>-->
-            <li><a href="#" class="btn">Home</a></li>
-            <li><a href="#" class="btn">About Us</a></li>
-            <li><a href="#" class="btn">Portfolio</a></li>
-            <li><a href="#" class="btn">Services</a></li>
-            <li><a href="#" class="btn">Contact Us</a></li>
-        </ul>
+            {% if page=='Home' %}
+                <li class="active"><a href="" class="btn" disabled="disabled">Home</a></li>
+            {% else %}
+                <li><a href="/" class="btn">Home</a></li>
+            {% endif %}
+
+            {% if page=='About Us' %}
+                <li class="active"><a href="" class="btn" disabled="disabled">About Us</a></li>
+            {% else %}
+                <li><a href="/aboutus" class="btn">About Us</a></li>
+            {% endif %}
+
+            {% if page=='Portfolio' %}
+                <li class="active"><a href="" class="btn" disabled="disabled">Portfolio</a></li>
+            {% else %}
+                <li><a href="/portfolio" class="btn">Portfolio</a></li>
+            {% endif %}
+
+            {% if page=='Services' %}
+                <li class="active"><a href="" class="btn" disabled="disabled">Services</a></li>
+            {% else %}
+                <li><a href="/services" class="btn">Services</a></li>
+            {% endif %}
+
+            {% if page=='Contact Us' %}
+                <li class="active"><a href="" class="btn" disabled="disabled">Contact Us</a></li>
+            {% else %}
+                <li><a href="/contactus" class="btn">Contact Us</a></li>
+            {% endif %}
+         </ul>
 </div>
 

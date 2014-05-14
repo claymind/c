@@ -34,9 +34,12 @@
     <header class="row">
         {% include '../partials/header.html'  %}
     </header>
+
     <nav class="row navbar">
-        {% include '../partials/navbar.html'  %}
+        {% block nav %}
+        {% endblock %}
     </nav>
+
     <div class="row">
         <section id="left-rail" class="col-md-4">
             {% include '../partials/left-rail.html'  %}
@@ -72,7 +75,6 @@
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
