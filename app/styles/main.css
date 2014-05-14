@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -89,8 +90,11 @@ body {
 nav li a { color: #FFF; }
 nav li > a:hover { background: inherit !important; }
 
+/*header */
 header,
 nav { margin-bottom: 30px; }
+
+header h3 { color: darkgoldenrod; letter-spacing: 4px; padding-top: 26px; }
 
 nav li {
 	height:40px;
@@ -101,7 +105,7 @@ nav li {
 	border-right: 2px solid #FFF;
 }
 
-/* left nav */
+/* left rail */
 #left-rail .news {
 	min-height: 300px;
 	background: -webkit-linear-gradient(#00FFFF, #00CCFF); /* For Safari 5.1 to 6.0 */
@@ -119,3 +123,10 @@ nav li {
 }
 
 .left-rail-item {margin-bottom: 15px; padding: 15px; }
+
+/* footer */
+footer { color: #666; margin: 70px 0 40px 0; text-align: center; }
+
+/*content */
+.content .description { font-size: 18px; margin-bottom: 40px; }
+.content .skills img { height: 60px; padding: 10px; }

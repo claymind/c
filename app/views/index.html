@@ -8,47 +8,54 @@
 {% endblock %}
 
 {% block content %}
-<div class="row">
-    <!--<div class="jumbotron col-sm-8 col-sm-offset-2">-->
-        <!--<h1>'Allo, 'Allo!</h1>-->
-        <!--<p class="lead">-->
-            <!--<img src="images/yeoman.png" alt="I'm Yeoman"><br>-->
-            <!--Always a pleasure scaffolding your apps.-->
-        <!--</p>-->
-        <!--<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>-->
-    <!--</div>-->
-
-    <!--<div class="row marketing">-->
-        <!--<div ng-repeat="thing in awesomeThings">-->
-            <!--<h4>{{thing.name}}</h4>-->
-            <!--<p>{{thing.info}}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--<div class="footer">-->
-        <!--<p>♥ from <%= name %></p>-->
-    <!--</div>-->
-    <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <img src="images/web-design.jpg" />
-            </li>
-            <li>
-                <img src="images/online-shopping.jpg" />
-            </li>
-            <li>
-                <img src="images/customer-service.jpg" />
-            </li>
-        </ul>
-    </div>
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="images/web-design.jpg" />
+        </li>
+        <li>
+            <img src="images/online-shopping.jpg" />
+        </li>
+        <li>
+            <img src="images/customer-service.jpg" />
+        </li>
+    </ul>
 </div>
+
+<p class="description">
+    We are a technology company based in Los Angeles, California. We are committed to help you grow your business by automating your business processes and getting you up to speed with the latest technology.
+</p>
+
+<p class="skills">
+    <img src="images/angular.png" alt="Angular Js" />
+    <img src="images/nodejs.png" alt="Node Js" />
+    <img src="images/express.png" alt="Express Js" />
+    <img src="images/aspnet.png" alt="ASP.NET MVC" />
+    <img src="images/sql-server.jpeg" alt="SQL Server" />
+    <img src="images/xamarin-logo.jpg" alt="Xamarin" />
+    <img src="images/awslogo.png" alt="AWS" />
+    <img src="images/shopify_experts.png" alt="Shopify Experts" />
+    <img src="images/yeoman.png" alt="Yeoman" />
+    <img src="images/grunt-logo.png" alt="Grunt" />
+    <img src="images/bower.png" alt="Bower" />
+    <img src="images/bootstrap.jpeg" alt="Twitter Bootstrap" />
+    <img src="images/foundation.jpg" alt="Zurb Foundation" />
+    <img src="images/html5-css.png" alt="HTML5 CSS Javascript" />
+    <img src="images/jquery.jpeg" alt="JQuery" />
+    <img src="images/github.jpeg" alt="GitHub" />
+
+</p>
 {% endblock %}
 
-{% block footer %}
+
+
+{% block bottomjs %}
 {% parent %}
 <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
-        $('.flexslider').flexslider();
+        $('.flexslider').flexslider({
+            controlNav: false
+        });
     });
 </script>
 {% endblock %}

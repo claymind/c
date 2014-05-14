@@ -12,6 +12,7 @@
     {% block head %}
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(app) styles/vendor.css -->
     <!-- bower:css -->
@@ -75,13 +76,16 @@
 <!-- endbower -->
 <!-- endbuild -->
 
-{% block footer %}
+<footer class="row">
+{% include '../partials/footer.html'  %}
+</footer>
+
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/navbar.js"></script>
 <script src="bower_components/flexslider/jquery.flexslider.js"></script>
 <!-- endbuild -->
-
+{% block bottomjs %}{% endblock %}
 </body>
 </html>
