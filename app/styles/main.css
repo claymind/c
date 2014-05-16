@@ -130,3 +130,4 @@ footer { color: #666; margin: 70px 0 40px 0; text-align: center; }
 /*content */
 .content .description { font-size: 18px; margin-bottom: 40px; }
 .content .skills img { height: 60px; padding: 10px; }
+.content h1  { color: #0066cc; margin-bottom: 30px; }
