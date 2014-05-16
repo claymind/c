@@ -119,10 +119,9 @@ nav li.active {
 	background: linear-gradient(#FFF5EB, #FFE6CC); /* Standard syntax (must be last) */
 }
 
-#left-rail .featured-intro { font-style: italic; margin-bottom: 30px; }
+#left-rail .featured-intro { color: lightcoral; font-style: italic; margin-bottom: 30px; }
 #left-rail h3 { margin-top: 0; color: crimson; margin-bottom: 30px; }
-#left-rail .featured-intro { color: lightcoral; }
-/*#left-rail .featured img { height: 100px; }*/
+#left-rail .featured-content { color: #666; }
 
 #left-rail .blog {
 	min-height: 300px;
@@ -138,7 +137,7 @@ nav li.active {
 footer { color: #666; margin: 70px 0 40px 0; text-align: center; }
 
 /*content */
-.content .description { font-size: 18px; margin-bottom: 40px; }
+.content .description { font-size: 18px; margin-bottom: 40px; color: #666; }
 .content .skills img { height: 60px; padding: 10px; }
 .content h1  { color: #0066cc; margin-bottom: 30px; }
 
